@@ -1,0 +1,50 @@
+@import '../utilities/variables';
+
+.bk-header{
+    background-color: $white;
+    position: sticky;
+    top: 0;
+    z-index: $zindex-100;
+  }
+  .activeanit{
+    box-shadow: 0px 3px 8px 0px rgba(21, 47, 95, 0.12);
+  }
+  .bk_desktop{
+    @include max-width;
+    padding: 15px 0;
+  }
+  .logo_desktop{
+    color: $color-prim;
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .desktop_bklinks{
+    flex-basis: 50%;
+    a{
+      color: $black-two;
+      font-weight: 500;
+      font-size: 15px;
+      display: block;
+      position: relative;
+      &::after{
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: $color-prim;
+        transition: all 0.3s;
+        // opacity: 0;
+        overflow: hidden;
+      }
+      &:hover{
+        color: $color-prim;
+        transition: all 0.3s;
+        &::after{
+          width: 100%;
+          // opacity: 1;
+        }
+      }
+    }
+  }

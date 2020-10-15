@@ -1,0 +1,32 @@
+@import './variables';
+
+.centerv, .centerh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerv{
+    flex-direction: column;
+}
+
+.title-style {
+    color: #32333c;
+    font-size: 45px;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.title-style:before {
+    content: "";
+    position: absolute;
+    bottom: -21px;
+    height: 4px;
+    background-color: #feb633;
+    width: 68%;
+    margin: 0 auto;
+}

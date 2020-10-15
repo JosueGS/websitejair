@@ -1,0 +1,13 @@
+@import '../utilities/variables';
+
+body {
+    line-height: $theight1 ;
+    color: black;
+    font-family: $font-pri;
+    background: yellow;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: $fweight500;
+}
