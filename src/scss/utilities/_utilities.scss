@@ -1,15 +1,22 @@
 @import './variables';
 
-.centerv, .centerh{
+.centerv, .centerh, .flex-bwt{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .centerv{
     flex-direction: column;
 }
+.flex-bwt{
+    justify-content: space-between;
+}
 
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .title-style {
     color: #32333c;
     font-size: 45px;
@@ -30,3 +37,4 @@
     width: 68%;
     margin: 0 auto;
 }
+

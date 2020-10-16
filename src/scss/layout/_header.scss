@@ -10,11 +10,11 @@
     box-shadow: 0px 3px 8px 0px rgba(21, 47, 95, 0.12);
   }
   .bk_desktop{
-    @include max-width;
+    // @include max-width;
     padding: 15px 0;
   }
   .logo_desktop{
-    color: $color-prim;
+    color: $color-pri;
     font-size: 50px;
     font-weight: 700;
   }
@@ -33,13 +33,13 @@
         display: block;
         width: 0;
         height: 2px;
-        background-color: $color-prim;
+        background-color: $color-pri;
         transition: all 0.3s;
         // opacity: 0;
         overflow: hidden;
       }
       &:hover{
-        color: $color-prim;
+        color: $color-pri;
         transition: all 0.3s;
         &::after{
           width: 100%;
